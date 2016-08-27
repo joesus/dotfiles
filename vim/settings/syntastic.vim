@@ -3,9 +3,10 @@ let g:syntastic_enable_signs=1
 "automatically jump to the error when saving the file
 let g:syntastic_auto_jump=0
 "show the error list automatically
-let g:syntastic_auto_loc_list=1
+let g:syntastic_auto_loc_list=0
 "don't care about warnings
-let g:syntastic_quiet_messages = {'level': 'warnings'}
+let g:syntastic_quiet_messages = {'level': 'warnings',
+                                 \'regex': 'The IO action ‘main’ is not defined in module ‘Main’'}
 
 " Default to eslint. If you need jshint, you can override this in
 " ~/.vimrc.after
